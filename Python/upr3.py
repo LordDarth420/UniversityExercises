@@ -1,0 +1,5 @@
+word = input("Please enter your word: ")
+tuple1 = tuple(word)
+print(tuple1)
+distance = int(input("Please enter distance: "))
+print(tuple1[::distance])
