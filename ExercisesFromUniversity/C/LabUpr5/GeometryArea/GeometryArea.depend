@@ -1,9 +1,0 @@
-# depslib dependency file v1.0
-1646908873 source:c:\users\pc9\desktop\niki c\labupr5\geometryarea\main.c
-	"pch.h"
-	<stdio.h>
-	<stdlib.h>
-	<math.h>
-
-1646908712 c:\users\pc9\desktop\niki c\labupr5\geometryarea\pch.h
-

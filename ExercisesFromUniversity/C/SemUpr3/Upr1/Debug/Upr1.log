@@ -1,6 +1,0 @@
-﻿  pch.c
-  Upr1.c
-C:\Users\Niki\Desktop\UniversityExercises\C\SemUpr3\Upr1\Upr1.c(8,18): warning C4101: 'bigger': unreferenced local variable
-C:\Users\Niki\Desktop\UniversityExercises\C\SemUpr3\Upr1\Upr1.c(8,26): warning C4101: 'smaller': unreferenced local variable
-C:\Users\Niki\Desktop\UniversityExercises\C\SemUpr3\Upr1\Upr1.c(29,32): warning C4047: 'return': 'int' differs in levels of indirection from 'void *'
-  Upr1.vcxproj -> C:\Users\Niki\Desktop\UniversityExercises\C\SemUpr3\Upr1\Debug\Upr1.exe
