@@ -58,7 +58,7 @@ void quadraticSolver(double a, double b, double c)
             printf("The equation has two solutions and they are: %0.6lf and %0.5lf.", x1, x2);
         }
         /*this automatic rounding doesn't work well if you use double values as coefficients
-         and the solutions turn out to be whole numbers. needs fixing.*/
+         and if the solutions turn out to be whole numbers. needs fixing.*/
     }
     return;
 }
