@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1647005411 source:c:\users\niki\desktop\universityexercises\others\c\allprimenums\main.c
+	<stdio.h>
+	<stdlib.h>
+

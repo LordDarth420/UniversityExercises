@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1647022412 source:c:\users\niki\desktop\universityexercises\others\c\quadratic\main.c
+	"quadratic.h"
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1647017653 c:\users\niki\desktop\universityexercises\others\c\quadratic\quadratic.h
+
