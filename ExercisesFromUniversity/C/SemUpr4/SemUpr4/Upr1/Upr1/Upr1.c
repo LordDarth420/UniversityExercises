@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX 50
+
+void sort(int *, int);
+void printArr(int[], int);
+void findLongestSquareAndBeginning(int[], int);
 int main()
 {
 	int n;
@@ -14,37 +18,48 @@ int main()
 		scanf_s("%d", &num);
 		nums[i] = num;
 	}
+	sort(nums, n);
+	printf("Sorted list:\n");
+	printArr(nums, n);
+	findLongestSquareAndBeginning(nums, n);
+}
 
-	//sort
+void sort(int *arr, int n)
+{
 	for (int i = 0; i < n; i++)
 	{
 		for (int j = 0; j < n; j++)
 		{
-			if (nums[j] > nums[i])
+			if (arr[j] > arr[i])
 			{
-				int temp = nums[j];
-				nums[j] = nums[i];
-				nums[i] = temp;
+				int temp = arr[j];
+				arr[j] = arr[i];
+				arr[i] = temp;
 			}
 
 		}
 	}
-	printf("Sorted list:\n");
+}
+void printArr(int nums[], int n)
+{
 	for (int i = 0; i < n; i++)
 	{
 		printf("%d ", nums[i]);
 	}
+}
+void findLongestSquareAndBeginning(int arr[], int n)
+{
 	int k = 0, cnt = 1;
 	int beginningOfSquare[MAX];
 	int lengthOfSquare[MAX];
 	for (int i = 0; i < n;)
 	{
 		cnt = 1;
-		if (nums[i] == nums[i + 1])
+		if (arr[i] == arr[i + 1])
 		{
 			cnt++;
 			int j = i + 2;
-			while (nums[i] == nums[j])
+			while (arr[i] == arr[j])
 			{
 				cnt++;
 				j++;
@@ -73,7 +88,4 @@ int main()
 	{
 		printf("\nThere are no squares.");
 	}
-	
-	
-	//4 4 4 4 15 6 5
 }
