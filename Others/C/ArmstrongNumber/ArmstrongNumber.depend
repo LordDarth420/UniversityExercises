@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1648655261 source:c:\users\niki\desktop\universityexercises\others\c\armstrongnumber\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+

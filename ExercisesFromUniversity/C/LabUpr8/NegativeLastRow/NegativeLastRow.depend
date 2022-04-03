@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1648712873 source:c:\users\pc21\desktop\niki c\negativelastrow\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
+1648712874 source:c:\users\niki\desktop\universityexercises\exercisesfromuniversity\c\labupr8\negativelastrow\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+

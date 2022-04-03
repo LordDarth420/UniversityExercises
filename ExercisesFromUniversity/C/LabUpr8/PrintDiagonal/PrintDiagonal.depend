@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1648710232 source:c:\users\pc21\desktop\niki c\printdiagonal\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1648710354 source:c:\users\niki\desktop\universityexercises\exercisesfromuniversity\c\labupr8\printdiagonal\main.c
+	<stdio.h>
+	<stdlib.h>
+
