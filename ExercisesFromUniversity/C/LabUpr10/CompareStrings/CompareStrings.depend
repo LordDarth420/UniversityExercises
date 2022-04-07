@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1649325530 source:c:\users\pc9\desktop\niki c 2\comparestrings\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+

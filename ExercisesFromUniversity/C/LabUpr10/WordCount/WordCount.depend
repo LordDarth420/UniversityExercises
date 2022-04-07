@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1649324976 source:c:\users\pc9\desktop\niki c 2\wordcount\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1649328792 source:c:\users\niki\desktop\universityexercises\exercisesfromuniversity\c\labupr10\wordcount\main.c
+	<stdio.h>
+	<stdlib.h>
+
