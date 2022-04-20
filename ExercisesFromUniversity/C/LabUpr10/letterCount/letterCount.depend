@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1649350503 source:c:\users\niki\desktop\universityexercises\exercisesfromuniversity\c\labupr10\lettercount\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+

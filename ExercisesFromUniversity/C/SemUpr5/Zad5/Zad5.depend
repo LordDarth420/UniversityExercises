@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1649357958 source:c:\users\niki\desktop\universityexercises\exercisesfromuniversity\c\semupr5\zad5\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+

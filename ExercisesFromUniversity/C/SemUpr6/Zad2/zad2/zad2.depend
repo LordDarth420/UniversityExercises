@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1650459298 source:c:\users\niki\desktop\universityexercises\exercisesfromuniversity\c\semupr6\zad2\zad2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"order.h"
+	"product.h"
+
+1650458304 c:\users\niki\desktop\universityexercises\exercisesfromuniversity\c\semupr6\zad2\zad2\order.h
+
+1650458315 c:\users\niki\desktop\universityexercises\exercisesfromuniversity\c\semupr6\zad2\zad2\product.h
+
