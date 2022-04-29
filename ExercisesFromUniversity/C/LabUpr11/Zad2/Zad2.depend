@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1650560732 source:c:\users\niki\desktop\universityexercises\exercisesfromuniversity\c\labupr11\zad2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	"book.h"
+
+1650558133 c:\users\niki\desktop\universityexercises\exercisesfromuniversity\c\labupr11\zad2\book.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	"book.h"
+
+1650560685 c:\users\niki\desktop\universityexercises\exercisesfromuniversity\c\labupr11\zad2\book.h
+
+1650559708 source:c:\users\niki\desktop\universityexercises\exercisesfromuniversity\c\labupr11\zad2\book.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<string.h>
+	"book.h"
+

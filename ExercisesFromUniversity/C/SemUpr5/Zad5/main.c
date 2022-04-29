@@ -1,141 +1,57 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <stdbool.h>
-void addElement(int, int *, int);
-void deleteElement(int, int *, int);
-int smallestByN(int, int *, int);
-void printArray(int *, int);
-bool strCompare(char *,char *);
-int strLength(char* s1);
+#include "pch.h"
 int main()
 {
-    //not finished
-    char commands[12];
-    int *arr, len = 1;
-    scanf("%s", commands);
+    int *nums, argument, numsCount = 0;
+    char commands[15];
+    scanf(" %[^\n]s", commands);
 
-    arr = (int*)calloc(1, sizeof(int));
-    while(!strCompare(commands,"end"))
+    nums = (int*)malloc((numsCount + 2)*sizeof(int));
+    while(strcmp(commands, "end") != 0)
     {
-        char command[9], number[15];
-        int i = 0, k = 0;
-        while(commands[i] != '(')
+        bool isNum = false;
+        int i = 0, numCnt = 0;
+        char *number, command[10];
+        number = (char*)calloc(numCnt + 1, sizeof(char));
+        //adds command to separate array
+        while(commands[i] != '(' && commands[i] != '\0')
         {
             command[i] = commands[i];
             i++;
         }
-        i++;
-        while(commands[i] != ')')
+        //adds '\0' character, so that strcmp in the Commander© works correctly
+        command[i++] = '\0';
+        /*adds number to a sepasrate dynamic array (because we don't know how long the number is going to be),
+         then with atoi string is converted into int*/
+        while(commands[i] != ')' && commands[i] != '\0')
         {
-            number[k] = commands[i];
+            number[numCnt++] = commands[i];
+            number = (char*)realloc(number, (numCnt + 1)*sizeof(char));
             i++;
-            k++;
         }
-        int element = atoi(number);
-        if(strCompare(command,"add"))
+        bool minusIsRead = false;
+        //check if argument is actually a number
+        for(int i = 0; i < numCnt; i++)
         {
-            addElement(element, arr, len - 1);
-            len++;
-            arr = (int*)realloc(arr, len*sizeof(int));
-        }
-        else if(strCompare(command,"delete"))
-        {
-            deleteElement(element, arr, len);
-            len--;
-            arr = (int*)realloc(arr, len*sizeof(int));
-        }
-        else if(strCompare(command,"smallest"))
-        {
-            printf("%d number is: %d", element, smallestByN(element, arr, len));
-        }
-        else if(strCompare(command,"print"))
-        {
-            printArray(arr, len);
-        }
-        else
-        {
-            printf("Wrong command!\n");
-        }
-        scanf("%s", commands);
-    }
-}
-
-
-void addElement(int x, int *arr , int index)
-{
-    arr[index] = x;
-    printf("Element %d added!\n", x);
-}
-void deleteElement(int x, int *arr, int len)
-{
-    for(int i = 0; i < len; i++)
-    {
-        if(arr[i] == x)
-        {
-            for(int j = i - 1; j < len - 1; j++)
+            if(number[i] >= 48 && number[i] <= 57)
             {
-                arr[j] = arr[j + 1];
+                isNum = true;
             }
-            break;
-        }
-    }
-    printf("Element %d deleted!\n", x);
-}
-int smallestByN(int n, int *arr, int len)
-{
-    int tempArr[len];
-    for(int i = 0; i < len; i++)
-    {
-        tempArr[i] = tempArr[i];
-    }
-
-    for(int i = 0; i < len; i++)
-    {
-        for(int j = 0; j < len; j++)
-        {
-            if(tempArr[i] > tempArr[j])
+            else if(number[0] == 45 && !minusIsRead)
             {
-                int temp = tempArr[i];
-                tempArr[i] = tempArr[j];
-                tempArr[j] = temp;
+                minusIsRead = true;
             }
+            else{isNum = false; break;}
         }
+        argument = atoi(number);
+        free(number);
+        /*command and argument are passed to the Commander©, who processes the request of the user. the arrays are freed
+        so that there are no garbage values in the next iteration of this while*/
+        Commander(command, argument, nums, &numsCount, isNum);
+        scanf(" %[^\n]s", commands);
     }
-    return tempArr[n - 1];
+    return 0;
 }
-void printArray(int *arr, int n)
-{
-    for(int i = 0; i < n; i++)
-    {
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
-}
-bool strCompare(char* s1, char* s2)
-{
-    bool equals = true;
-    if(strLength(s1) == strLength(s2))
-    {
-        int n = strLength(s1);
-        for(int i = 0; i < n; i++)
-        {
-            if(s1[i] != s2[i])
-            {
-                equals = false;
-                break;
-            }
-        }
-        return equals;
-    }
-    else{equals = false; return equals;}
-}
-int strLength(char* s1)
-{
-    int cnt = 0;
-    while(s1[cnt] != '\0')
-    {
-        cnt++;
-    }
-    return cnt;
-}
-

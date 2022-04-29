@@ -1,6 +1,17 @@
 # depslib dependency file v1.0
-1649357958 source:c:\users\niki\desktop\universityexercises\exercisesfromuniversity\c\semupr5\zad5\main.c
+1651176253 source:c:\users\niki\desktop\universityexercises\exercisesfromuniversity\c\semupr5\zad5\main.c
 	<stdio.h>
 	<stdlib.h>
+	<string.h>
 	<stdbool.h>
+	"pch.h"
+
+1651166919 c:\users\niki\desktop\universityexercises\exercisesfromuniversity\c\semupr5\zad5\pch.h
+
+1651167901 source:c:\users\niki\desktop\universityexercises\exercisesfromuniversity\c\semupr5\zad5\pch.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<stdbool.h>
+	"pch.h"
 
