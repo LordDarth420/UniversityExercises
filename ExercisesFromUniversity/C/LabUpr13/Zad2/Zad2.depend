@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1652462318 source:c:\users\niki\desktop\universityexercises\exercisesfromuniversity\c\labupr13\zad2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
